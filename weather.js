@@ -23,9 +23,9 @@ axios.get(urlWeather)
     return items
   })
   .then(items => {
-    fs.writeFile('./weather.json', JSON.stringify(items[0], function (err) {
+    fs.writeFile('./weather.json', JSON.stringify(items), function (err) {
       if (err) return console.log(err)
 
-      console.log('Datos del clima salvados! :D')
-    }))
+      console.log('Datos del clima obtenidos y guardados')
+    })
   })
