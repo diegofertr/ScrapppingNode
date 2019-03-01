@@ -1,3 +1,4 @@
 weather.json
 items.json
 /node_modules
+.package-lock.json
